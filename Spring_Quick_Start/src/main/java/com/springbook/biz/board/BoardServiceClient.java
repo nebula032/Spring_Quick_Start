@@ -16,9 +16,9 @@ public class BoardServiceClient {
 		
 		// 3. 글 동록 테스트
 		BoardVO vo = new BoardVO();
-		vo.setTitle("간다");
-		vo.setWriter("sjacob");
-		vo.setContent("달려가보자");
+		vo.setTitle("간다6");
+		vo.setWriter("sjacob6");
+		vo.setContent("달려가보자6");
 		boardService.insertBoard(vo);
 		
 		// 4. 글 목록 검색 기능 테스트
