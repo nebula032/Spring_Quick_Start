@@ -14,7 +14,7 @@ import com.springbook.biz.common.LogAdvice;
 public class BoardServiceImpl implements BoardService {
 
 	@Autowired
-	private BoardDAO boardDAO;
+	private BoardDAOSpring boardDAO;
 	// AOP 설정 전
 //	private LogAdvice log;
 //	private Log4jAdvice log;
@@ -26,9 +26,9 @@ public class BoardServiceImpl implements BoardService {
 
 	@Override
 	public void insertBoard(BoardVO vo) {
-		if (vo.getSeq() == 0) {
-			throw new IllegalArgumentException("0번 글은 등록할 수 없습니다.");
-		}
+//		if (vo.getSeq() == 0) {
+//			throw new IllegalArgumentException("0번 글은 등록할 수 없습니다.");
+//		}
 //		log.printLog();
 //		log.printLogging();
 		boardDAO.insertBoard(vo);
