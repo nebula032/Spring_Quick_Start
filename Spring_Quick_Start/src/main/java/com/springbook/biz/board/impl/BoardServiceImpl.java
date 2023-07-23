@@ -32,6 +32,7 @@ public class BoardServiceImpl implements BoardService {
 //		log.printLog();
 //		log.printLogging();
 		boardDAO.insertBoard(vo);
+		boardDAO.insertBoard(vo);
 	}
 
 	@Override

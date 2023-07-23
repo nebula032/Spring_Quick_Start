@@ -16,10 +16,11 @@ public class BoardServiceClient {
 		
 		// 3. 글 동록 테스트
 		BoardVO vo = new BoardVO();
+		vo.setSeq(103);
 		vo.setTitle("간다8");
 		vo.setWriter("sjacob8");
 		vo.setContent("달려가보자8");
-		boardService.insertBoard(vo);
+		//boardService.insertBoard(vo);
 		
 		// 4. 글 목록 검색 기능 테스트
 		List<BoardVO> boardList = boardService.getBoardList(vo);
