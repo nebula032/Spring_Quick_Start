@@ -53,6 +53,7 @@ public class BoardServiceImpl implements BoardService {
 	public BoardVO getBoard(BoardVO vo) {
 //		log.printLog();
 //		log.printLogging();
+		System.out.println(vo.getSeq());
 		return boardDAO.getBoard(vo);
 	}
 
