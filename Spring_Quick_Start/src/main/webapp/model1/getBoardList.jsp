@@ -1,7 +1,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.springbook.biz.board.impl.BoardDAO" %>
 <%@ page import="com.springbook.biz.board.BoardVO" %>
-<%@ page import="java.util.List" %>
 <%@ page contentType="text/html; charset=EUC-KR" %>
 <%
 	// 1. 사용자 입력 정보 추출(검색 기능은 나중에 구현)
