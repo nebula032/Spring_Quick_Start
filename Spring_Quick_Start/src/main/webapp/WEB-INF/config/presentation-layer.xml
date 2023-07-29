@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<!-- ViewResolver 등록 -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/board/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+
+	<!-- handlerMapping 등록 -->
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="model2(MVC)/login.do">login</prop>
+				<prop key="model2(MVC)/getBoardList.do">getBoardList</prop>
+				<prop key="model2(MVC)/getBoard.do">getBoard</prop>
+				<prop key="model2(MVC)/insertBoard.do">insertBoard</prop>
+				<prop key="model2(MVC)/updateBoard.do">updateBoard</prop>
+				<prop key="model2(MVC)/deleteBoard.do">deleteBoard</prop>
+				<prop key="model2(MVC)/logout.do">logout</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- Controller 등록 -->
+	<bean id="login" class="com.springbook.view.user.LoginController"></bean>
+	<bean id="getBoardList" class="com.springbook.view.user.GetBoardListController"></bean>
+	<bean id="getBoard" class="com.springbook.view.user.GetBoardController"></bean>
+	<bean id="insertBoard" class="com.springbook.view.user.InsertBoardController"></bean>
+	<bean id="updateBoard" class="com.springbook.view.user.UpdateBoardController"></bean>
+	<bean id="deleteBoard" class="com.springbook.view.user.DeleteBoardController"></bean>
+	<bean id="logout" class="com.springbook.view.user.LogoutController"></bean>
 
 </beans>
