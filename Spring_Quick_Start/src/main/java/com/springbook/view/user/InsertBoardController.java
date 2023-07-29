@@ -13,7 +13,7 @@ public class InsertBoardController implements Controller {
 
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("===> InsertBoardController(Spring MVC) 글 목록 검색 처리");
+		System.out.println("===> InsertBoardController(Spring MVC) 글 등록 처리");
 		
 		// 1. 사용자 입력 정보 추출 
 		String title = request.getParameter("title"); 
