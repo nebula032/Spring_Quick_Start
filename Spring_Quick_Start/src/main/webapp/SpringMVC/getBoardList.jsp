@@ -17,6 +17,7 @@
 <table border="1" cellpadding="0" cellspacing="0" width="700">
 	<tr>
 		<td align="right">
+			${boardListCount }
 			<select name="searchCondition">
 			<c:forEach items="${conditionMap }" var="option">
 				<option value="${option.value }">${option.key }</option>

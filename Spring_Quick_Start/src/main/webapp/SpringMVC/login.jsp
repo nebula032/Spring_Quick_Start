@@ -8,7 +8,7 @@
 </head>
 <body>
 <center>
-<h1>로그인</h1>
+<h1>로그인(SpringMVC)</h1>
 <hr>
 <form action="login.do" method="post">
 <table border="1" cellpadding="0" cellspacing="0">
