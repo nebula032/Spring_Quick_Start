@@ -14,7 +14,7 @@ import com.springbook.biz.common.LogAdvice;
 public class BoardServiceImpl implements BoardService {
 
 	@Autowired
-	private BoardDAO boardDAO;
+	private BoardDAOJPA boardDAO;
 	// AOP ¼³Á¤ Àü
 //	private LogAdvice log;
 //	private Log4jAdvice log;

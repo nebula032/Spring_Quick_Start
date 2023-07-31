@@ -15,6 +15,40 @@
 	</properties>
 	<dependencies>
 	
+		<!-- JPA, 하이버네이트 -->
+	  	<dependency>
+	  		<groupId>org.hibernate</groupId>
+	      <artifactId>hibernate-entitymanager</artifactId>
+	      <version>5.1.0.Final</version>
+	  	</dependency>
+	  	
+	  	<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+	
+		<!-- Mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+		
+		<!-- Mybatis Spring -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+	
+		<!-- Ibatis -->
+		<dependency>
+			<groupId>org.apache.ibatis</groupId>
+			<artifactId>ibatis-core</artifactId>
+			<version>3.0</version>
+		</dependency>
+	
 		<!-- Jackson2 -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
