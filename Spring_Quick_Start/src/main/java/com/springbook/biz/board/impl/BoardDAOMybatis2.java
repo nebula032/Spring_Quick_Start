@@ -12,10 +12,10 @@ import org.springframework.stereotype.Repository;
 import com.springbook.biz.board.BoardVO;
 import com.springbook.biz.board.util.SqlSessionFactoryBean;
 
-@Repository
+//@Repository
 public class BoardDAOMybatis2 extends SqlSessionDaoSupport {
 
-	@Autowired 
+	//@Autowired 
 	private SqlSessionTemplate mybatis;
 
 //	@Autowired 

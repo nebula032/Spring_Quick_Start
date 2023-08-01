@@ -27,12 +27,13 @@ public class BoardDAOJPA {
 
 	public void deleteBoard(BoardVO vo) {
 		System.out.println("===> em로  deleteBoard() 기능 처리");
-		em.remove(vo);
+		BoardVO board =  em.find(BoardVO.class, vo.getSeq());
+		em.remove(board);
 	}
 
 	public BoardVO getBoard(BoardVO vo) {
 		System.out.println("===> em로  getBoard() 기능 처리");
-		return em.find(BoardVO.class, vo);
+		return (BoardVO) em.find(BoardVO.class, vo.getSeq());
 	}
 
 	public List<BoardVO> getBoardList(BoardVO vo) {

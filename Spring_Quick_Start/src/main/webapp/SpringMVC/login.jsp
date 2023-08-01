@@ -9,7 +9,6 @@
 </head>
 <body>
 <center>
-<<<<<<< HEAD
 <h1><spring:message code="message.user.login.title"/></h1>
 <a href="login.do?lang=en">
 	<spring:message code="message.user.login.language.en"/>
@@ -17,9 +16,7 @@
 <a href="login.do?lang=ko">
 	<spring:message code="message.user.login.language.ko"/>
 </a>
-=======
 <h1>·Î±×ÀÎ(SpringMVC)</h1>
->>>>>>> bb1238fd5ea052fc038550e8eb98612120a4933c
 <hr>
 <form action="login.do" method="post">
 <table border="1" cellpadding="0" cellspacing="0">

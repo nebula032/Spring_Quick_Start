@@ -20,7 +20,7 @@
 	<!-- 스프링과 JPA 연동 설정 -->
 	<bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"></bean>
 	
-	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntiryManagerFactoryBean">
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="jpaVendorAdapter" ref="jpaVendorAdapter"></property>
 	</bean>
@@ -36,13 +36,13 @@
 		<property name="dataSource" ref="dataSource" ></property>
 		<property name="configLocation" value="classpath:sql-map-config.xml" ></property>	
 	</bean> -->
-	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<!-- <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:sql-map-config.xml" />
 	</bean>
 	<bean class="org.mybatis.spring.SqlSessionTemplate">
 		<constructor-arg ref="sqlSessionFactory"></constructor-arg>
-	</bean>
+	</bean> -->
 	
 	<!-- DataSource 설정  -->
 	<!-- <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
@@ -53,7 +53,7 @@
 	</bean> -->
 	
 	<!-- database.properties 생성시 -->
-	<!-- <context:property-placeholder location="classpath:config/database.properties"/> -->
+	<context:property-placeholder location="classpath:config/database.properties"/>
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
 		<property name="driverClassName" value="${jdbc.driver}" />

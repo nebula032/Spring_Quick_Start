@@ -8,7 +8,7 @@ message.user.login.language.en=영어
 message.user.login.language.ko=한글
 
 # getBoardList.jsp
-message.board.list.mainTItle=게시판 목록
+message.board.list.mainTitle=게시판 목록
 message.board.list.welcomeMsg=님! 게시판에 오신걸 환영합니다.
 message.board.list.search.condition.title=제목
 message.board.list.search.condition.content=내용
