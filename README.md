@@ -1,2 +1,3 @@
-# Spring_Quick_Start
-Spring_Quick_Start
+# 책 정보
+제목 : 스프링 퀵 스타트<br>
+저자(글) : 채규태 저자
