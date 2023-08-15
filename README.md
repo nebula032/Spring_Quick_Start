@@ -1,5 +1,5 @@
 # 책 정보
-![9791186710074](https://github.com/nebula032/Spring_Quick_Start/assets/85532437/71da4e31-f6ec-4ddb-9c2c-8fbb50778205)
+<img src="https://github.com/nebula032/Spring_Quick_Start/assets/85532437/71da4e31-f6ec-4ddb-9c2c-8fbb50778205" width="300" height="400" />
 <br>
 제목 : 스프링 퀵 스타트<br>
 저자(글) : 채규태 저자<br>
